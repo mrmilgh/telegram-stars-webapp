@@ -1,5 +1,6 @@
 import hmac, hashlib, urllib.parse
-from config import TELEGRAM_BOT_TOKEN
+
+TELEGRAM_BOT_TOKEN = "2175583e3207a0705ac4ae92fd90aaf5415a12a5292c9f1d4aaffc9bc659"
 
 def verify_stars_init_data(init_data: str) -> bool:
     try:
