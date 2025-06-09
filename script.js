@@ -1,4 +1,4 @@
-document.getElementById("buyButton").addEventListener("click", function () {
+function buyStars(credits) {
     const tg = window.Telegram?.WebApp;
     if (!tg) {
         alert("WebApp API در دسترس نیست.");
@@ -12,7 +12,7 @@ document.getElementById("buyButton").addEventListener("click", function () {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
             user_id: userId,
-            credits: 10
+            credits: credits
         })
     })
     .then(res => res.json())
@@ -27,4 +27,4 @@ document.getElementById("buyButton").addEventListener("click", function () {
         console.error("Fetch Error:", err);
         alert("❌ خطا در ارتباط با سرور");
     });
-});
+}
