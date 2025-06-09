@@ -9,9 +9,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>خرید امتیاز</h1>
-        <p>برای خرید ۱۰ امتیاز، روی دکمه زیر کلیک کن:</p>
-        <button id="buyButton">⭐️ خرید با استارز</button>
+        <h1>🛒 خرید امتیاز</h1>
+        <p>یکی از بسته‌های زیر را انتخاب کنید:</p>
+
+        <div class="button-group">
+            <button onclick="buyStars(40)">📦 بسته پایه - 40 امتیاز</button>
+            <button onclick="buyStars(100)">📦 بسته متوسط - 100 امتیاز</button>
+            <button onclick="buyStars(250)">🎁 بسته ویژه - 250 امتیاز</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
