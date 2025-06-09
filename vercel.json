@@ -4,7 +4,7 @@
   ],
   "routes": [
     { "src": "/api/.*", "dest": "main.handler" },
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/", "dest": "main.handler" },
+    { "src": "/(.*)", "dest": "main.handler" }
   ]
 }
