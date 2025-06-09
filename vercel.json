@@ -5,7 +5,10 @@
       "src": "main.py",
       "use": "@vercel/python",
       "config": {
-        "includeFiles": "public/**"
+        "includeFiles": [
+          "public/**",
+          "api/**"
+        ]
       }
     }
   ],
