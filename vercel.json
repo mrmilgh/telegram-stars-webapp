@@ -2,11 +2,13 @@
   "builds": [
     { "src": "main.py", "use": "@vercel/python" }
   ],
+
   "functions": {
     "main.py": {
       "includeFiles": "public/**"
     }
   },
+  
   "routes": [
     { "src": "/api/.*", "dest": "main.handler" },
     { "src": "/",        "dest": "main.handler" },
