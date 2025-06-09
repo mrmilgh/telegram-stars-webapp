@@ -1,17 +1,12 @@
 {
-  // تعریف بیلد تابع سرورلس پایتون
   "builds": [
     { "src": "main.py", "use": "@vercel/python" }
   ],
-
-  // ⬅️  بخش جدید: مشخص می‌کنیم فولدر public همراه تابع آپلود شود
   "functions": {
     "main.py": {
       "includeFiles": "public/**"
     }
   },
-
-  // روتینگ درخواست‌ها به هندلر FastAPI
   "routes": [
     { "src": "/api/.*", "dest": "main.handler" },
     { "src": "/",        "dest": "main.handler" },
