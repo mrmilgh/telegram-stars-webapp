@@ -16,7 +16,7 @@ function buyStars(credits) {
     // نمایش بارگذاری
     tg.MainButton.setText("در حال پردازش...").show().disable();
 
-    fetch("https://your-backend.com/api/stars/buy", {
+    fetch("https://telegram-stars-webapp-beta.vercel.app/api/stars/buy", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
