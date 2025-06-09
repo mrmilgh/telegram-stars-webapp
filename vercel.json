@@ -10,8 +10,7 @@
     }
   ],
   "routes": [
-    { "src": "/api/.*", "dest": "main.handler" },
-    { "src": "/",        "dest": "main.handler" },
-    { "src": "/(.*)",    "dest": "main.handler" }
+    { "src": "/api/.*", "dest": "main.py" },
+    { "src": "/(.*)",   "dest": "main.py" }
   ]
 }
