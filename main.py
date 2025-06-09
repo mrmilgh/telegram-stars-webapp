@@ -10,7 +10,7 @@ app = FastAPI()
 
 app.include_router(stars_router, prefix="/api")
 
-frontend_path = os.path.join(BASE_DIR, "frontend")
+frontend_path = os.path.join(BASE_DIR, "public")
 app.mount("/static", StaticFiles(directory=frontend_path, html=True), name="static")
 
 @app.get("/")
